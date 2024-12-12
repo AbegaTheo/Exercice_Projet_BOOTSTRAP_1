@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Voyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/logo.jpeg" width="70" height="40" class="d-inline-block align-top" alt="Logo"> Traveling Agence Ada</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#circuits">Circuits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section héros -->
+    <section class="bg-dark text-white text-center py-5" style="background-image: url('image/Voyage_accueil.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; justify-content: center; color: white;">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-dark">Explorez le Monde avec Nous</h1>
+            <p class="lead fw-bold">Découvrez des destinations inoubliables et vivez des expériences uniques.</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Découvrez nos offres</a>
+        </div>
+    </section>
+  
+    <!-- Section Destinations -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos Destinations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card zoom-effect">
+                        <img src="image/Paris.png" class="card-img-top" alt="Destination Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris</h5>
+                            <p class="card-text">Paris, que l’on aime pour la douceur de son climat, la richesse de son histoire,
+                                son architecture, ses incomparables musées, ses grandes places en étoile, la Seine qui invite à la flânerie,
+                                sa tour Eiffel, sa cathédrale Notre-Dame qui se refait une beauté, l’odeur des croissants chauds,
+                                ses terrasses ensoleillées, et surtout, parce que Paris, eh bien, c’est Paris ! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card zoom-effect">
+                        <img src="image/Tahiti.png" class="card-img-top" alt="Destination Polynesie">
+                        <div class="card-body">
+                            <h5 class="card-title">Polynésie</h5>
+                            <p class="card-text">Tahiti, Bora Bora, les Marquises... On rêve de partir à la découverte de ces 118 îles du bout du monde.
+                                Le bleu translucide de leurs lagons, le vert éclatant de leurs forêts, la richesse de leurs fonds marins et leurs montagnes
+                                sculptées par la colère des volcans ont été peints, chantés et déclamés par des artistes comme Paul Gauguin et Jacques Brel
+                                qui ont choisi d’en faire leur dernière demeure.</p>
+                            <p>Eh bien Embarquez pour la Polynésie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card zoom-effect">
+                        <img src="image/Venise.png" class="card-img-top" alt="Destination Venise">
+                        <div class="card-body">
+                            <h5 class="card-title">Vénise</h5>
+                            <p class="card-text">Bâtie sur l’eau, cette ville aux 400 ponts, 200 canaux et quelque 3000 ruelles fait rêver les
+                                romantiques depuis des lustres. Qui ne s’est pas imaginé un jour parcourir son Grand Canal en gondole,
+                                déambuler sur sa place Saint-Marc, photographier son pont des Soupirs ou tout simplement se perdre dans ses petits
+                                sentieris ? Pour en profiter pleinement, c’est à pied ou en vaporetto que ça se passe.</p>
+                            <p>Alors, on embarque ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Voyages -->
+    <section id="circuits" class="container py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nos Circuits</h2>
+            <div class="accordion" id="voyagesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Circuit Paris
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#voyagesAccordion">
+                        <div class="accordion-body">
+                            Une brève description de ce circuit passionnant. <a href="#destinations">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Circuit Polynésie
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#voyagesAccordion">
+                        <div class="accordion-body">
+                            Découvrez ce circuit unique et captivant. <a href="#destinations">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Circuit Vénise
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#voyagesAccordion">
+                        <div class="accordion-body">
+                            Une autre aventure inoubliable vous attend. <a href="#destinations">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contactez-nous</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Adresse e-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre adresse e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="destination" class="form-label">Destination d'intérêt</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Destination qui vous intéresse">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="container bg-dark text-white text-center py-1">
+        <p>&copy; 2024 Nom de l'Agence. Tous droits réservés.</p>
+        <div>
+            <a href="https://github.com/AbegaTheo" target="_blank" class="mx-2 text-decoration-none">Github</a>
+            <a href="https://www.facebook.com/profile.php?id=61556560185637" target="_blank" class="mx-2 text-decoration-none">Facebook</a>
+            <a href="https://www.linkedin.com/in/abel-agoh-a1a731158/" target="_blank" class="mx-2 text-decoration-none">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

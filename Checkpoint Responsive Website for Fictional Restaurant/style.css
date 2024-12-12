@@ -1,0 +1,37 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Nécessaire pour que z-index fonctionne */
+}
+
+.zoom-effect:hover {
+  transform: scale(1.15); /* Agrandir légèrement la div */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+  z-index: 10; /* Met la div au-dessus des autres */
+}
+
+.card-title {
+  font-weight: bold;
+}
