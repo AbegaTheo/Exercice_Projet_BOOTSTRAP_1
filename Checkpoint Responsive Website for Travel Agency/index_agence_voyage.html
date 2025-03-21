@@ -8,39 +8,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Barre de navigation -->
+    
+    <!-- Barre de navigation principale -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="image/logo.jpeg" width="70" height="40" class="d-inline-block align-top" alt="Logo"> Traveling Agence Ada</a>
+            <!-- Logo et nom de l'agence -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.jpeg" width="70" height="40" class="d-inline-block align-top" alt="Logo">
+                Traveling Agence Ada
+            </a>
+    
+            <!-- Bouton pour le menu burger (affiché sur les petits écrans) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+    
+            <!-- Liens du menu de navigation -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#circuits">Circuits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto pour aligner à droite -->
+                    <!-- Lien vers la section Accueil -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <!-- Lien vers la section Destinations -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <!-- Lien vers la section Circuits -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#circuits">Circuits</a>
+                    </li>
+                    <!-- Lien vers la section Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Section héros -->
-    <section class="bg-dark text-white text-center py-5" style="background-image: url('image/Voyage_accueil.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; justify-content: center; color: white;">
+
+    <!-- Section Hero : Bannière principale en haut de la page -->
+    <section class="hero bg-dark text-white text-center py-5">
         <div class="container">
+            <!-- Titre principal de la bannière -->
             <h1 class="display-4 fw-bold text-dark">Explorez le Monde avec Nous</h1>
-            <p class="lead fw-bold">Découvrez des destinations inoubliables et vivez des expériences uniques.</p>
-            <a href="#destinations" class="btn btn-primary btn-lg">Découvrez nos offres</a>
+    
+            <!-- Slogan ou phrase d'accroche -->
+            <p class="lead fw-bold">
+                Découvrez des destinations inoubliables et vivez des expériences uniques.
+            </p>
+    
+            <!-- Bouton qui redirige vers la section des offres/destinations -->
+            <a href="#destinations" class="btn btn-primary btn-lg">
+                Découvrez nos offres
+            </a>
         </div>
     </section>
+
   
     <!-- Section Destinations -->
     <section id="destinations" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Nos Destinations</h2>
             <div class="row">
+                <!-- Carte de Paris -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
                         <img src="image/Paris.png" class="card-img-top" alt="Destination Paris">
@@ -53,6 +85,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Carte de Tahiti -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
                         <img src="image/Tahiti.png" class="card-img-top" alt="Destination Polynesie">
@@ -66,6 +99,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Carte de Venise -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
                         <img src="image/Venise.png" class="card-img-top" alt="Destination Venise">
@@ -156,7 +190,7 @@
 
     <!-- Pied de page -->
     <footer class="container bg-dark text-white text-center py-1">
-        <p>&copy; 2024 Nom de l'Agence. Tous droits réservés.</p>
+        <p>&copy; 2024 Traveling Agence ADA. Tous droits réservés.</p>
         <div>
             <a href="https://github.com/AbegaTheo" target="_blank" class="mx-2 text-decoration-none">Github</a>
             <a href="https://www.facebook.com/profile.php?id=61556560185637" target="_blank" class="mx-2 text-decoration-none">Facebook</a>

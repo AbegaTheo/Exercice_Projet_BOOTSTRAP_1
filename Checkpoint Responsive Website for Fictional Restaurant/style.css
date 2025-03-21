@@ -1,37 +1,52 @@
+/* Style global pour le corps de la page */
 body {
-  background-color: #f8f9fa;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa; /* Couleur de fond claire */
+  font-family: 'Open Sans', sans-serif; /* Police principale utilisée */
 }
 
+/* Section héroïque avec une image de fond */
 .hero {
-  background-size: cover;
-  background-position: center;
+  background-image: url('image/Lasagnes-butternut-ricotta-et-epinards-un-regal-automnal-a-ne-pas-manquer--1200x686.png'); /* Image de fond */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  height: 100vh; /* Hauteur de la section égale à la hauteur de la fenêtre */
+  display: flex; /* Utilisation de flexbox pour centrer le contenu */
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  color: #fff; /* Couleur du texte blanche */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour rendre le texte plus lisible */
 }
 
+/* Style des cartes */
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Espacement en bas des cartes */
 }
 
+/* Style du pied de page */
 footer {
-  color: white;
+  color: white; /* Couleur du texte blanche */
 }
 
+/* Style des liens dans le pied de page */
 footer a {
-  color: white;
-  margin: 0 10px;
+  color: white; /* Couleur des liens blanche */
+  margin: 0 10px; /* Espacement horizontal entre les liens */
 }
 
+/* Effet de zoom sur les cartes */
 .zoom-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide pour le zoom et l'ombre */
   position: relative; /* Nécessaire pour que z-index fonctionne */
 }
 
 .zoom-effect:hover {
-  transform: scale(1.15); /* Agrandir légèrement la div */
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
-  z-index: 10; /* Met la div au-dessus des autres */
+  transform: scale(1.15); /* Agrandir légèrement la carte au survol */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre au survol */
+  z-index: 10; /* Met la carte au-dessus des autres éléments */
 }
 
+/* Style des titres des cartes */
 .card-title {
-  font-weight: bold;
+  font-weight: bold; /* Texte en gras */
 }

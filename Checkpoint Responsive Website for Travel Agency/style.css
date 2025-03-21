@@ -1,31 +1,51 @@
+/* Style pour les cartes Bootstrap */
 .card {
-    margin-bottom: 30px;
-  }
-  
-  footer {
-    color: white;
-  }
-  
-  footer a {
-    color: white;
-    margin: 0 10px;
-  }
+  margin-bottom: 30px; /* Ajoute un espace en bas de chaque carte */
+}
 
-  footer a:hover {
-    color: blue;
-  }
-  
-  .zoom-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Nécessaire pour que z-index fonctionne */
-  }
-  
-  .zoom-effect:hover {
-    transform: scale(1.15); /* Agrandir légèrement la div */
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
-    z-index: 10; /* Met la div au-dessus des autres */
-  }
-  
-  .card-title {
-    font-weight: bold;
-  }
+/* Style général pour le pied de page */
+footer {
+  color: white; /* Texte en blanc */
+}
+
+/* Style des liens dans le pied de page */
+footer a {
+  color: white; /* Liens en blanc par défaut */
+  margin: 0 10px; /* Espace horizontal entre les liens */
+}
+
+/* Effet au survol des liens du footer */
+footer a:hover {
+  color: blue; /* Change la couleur du lien en bleu lorsqu'on passe la souris dessus */
+}
+
+/* Classe pour appliquer un effet zoom aux éléments */
+.zoom-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide pour le zoom et l'ombre */
+  position: relative; /* Nécessaire pour que le z-index fonctionne correctement */
+}
+
+/* Effet appliqué lors du survol */
+.zoom-effect:hover {
+  transform: scale(1.15); /* Agrandit l'élément à 115% */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de relief */
+  z-index: 10; /* Place l'élément au-dessus des autres */
+}
+
+/* Met en gras les titres des cartes */
+.card-title {
+  font-weight: bold;
+}
+
+/* Style pour la section hero (bannière d'accueil) */
+.hero {
+  background-image: url('image/Voyage_accueil.jpg'); /* Image de fond */
+  background-size: cover; /* L'image couvre tout l'espace disponible */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  display: flex; /* Utilise flexbox pour centrer le contenu */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  color: white; /* Texte en blanc */
+}
