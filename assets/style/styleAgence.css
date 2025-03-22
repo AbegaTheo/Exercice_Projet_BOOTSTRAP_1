@@ -3,6 +3,11 @@
   margin-bottom: 30px; /* Ajoute un espace en bas de chaque carte */
 }
 
+/* Barre de navigation */
+.navbar ul li a {
+  font-weight: bold; /* Texte en gras */
+}
+
 /* Style général pour le pied de page */
 footer {
   color: white; /* Texte en blanc */
@@ -39,7 +44,7 @@ footer a:hover {
 
 /* Style pour la section hero (bannière d'accueil) */
 .hero {
-  background-image: url('image/Voyage_accueil.jpg'); /* Image de fond */
+   /* Image de fond */
   background-size: cover; /* L'image couvre tout l'espace disponible */
   background-position: center; /* Centre l'image */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -48,4 +53,43 @@ footer a:hover {
   align-items: center; /* Centre verticalement */
   justify-content: center; /* Centre horizontalement */
   color: white; /* Texte en blanc */
+}
+
+/* Style pour la section contact */
+form {
+  max-width: 500px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  padding: 20px; /* Marge autour du formulaire */
+  background-color: #f5f5f5; /* Couleur de fond gris clair */
+  border-radius: 5px; /* Bordures arrondies */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de relief */
+}
+
+/* Style pour les labels des champs du formulaire */
+label {
+  font-weight: bold; /* Texte en gras */
+  display: block; /* Pour centrer les labels verticalement */
+  margin-bottom: 5px; /* Marge en bas des labels */
+}
+
+/* Style pour les champs du formulaire */
+input,
+textarea {
+  width: 100%; /* Largeur des champs */
+  padding: 10px; /* Marge autour des champs */
+  margin-bottom: 15px; /* Marge en bas des champs */
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 5px; /* Bordures arrondies */
+  font-size: 16px; /* Taille de police plus grande */
+}
+
+/* Style pour le bouton pour voir l'autre page */
+.lien {
+  margin-left: 50px; /* Marge gauche */
+}
+
+.lien:hover {
+  background-color: #ff8c29; /* Couleur de fond orange */
+  color: #fff; /* Couleur du texte blanche */
+  border-radius: 5px; /* Bordures arrondies */
 }

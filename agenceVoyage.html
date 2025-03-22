@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence de Voyage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/styleAgence.css">
 </head>
 <body>
     
@@ -13,8 +13,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <!-- Logo et nom de l'agence -->
-            <a class="navbar-brand" href="#">
-                <img src="image/logo.jpeg" width="70" height="40" class="d-inline-block align-top" alt="Logo">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="./assets/images/Agence-Voyage/logo.jpeg" width="70" height="40" class="d-inline-block align-top" alt="Logo">
                 Traveling Agence Ada
             </a>
     
@@ -28,7 +28,7 @@
                 <ul class="navbar-nav ms-auto"> <!-- ms-auto pour aligner à droite -->
                     <!-- Lien vers la section Accueil -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
+                        <a class="nav-link active" href="#">Accueil</a>
                     </li>
                     <!-- Lien vers la section Destinations -->
                     <li class="nav-item">
@@ -42,6 +42,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <!-- Bouton pour accéder au menu -->
+                    <li class="nav-item">
+                        <a class="btn lien btn-primary ml-5" href="./resto.html">Site de Restaurant</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,7 +53,7 @@
 
 
     <!-- Section Hero : Bannière principale en haut de la page -->
-    <section class="hero bg-dark text-white text-center py-5">
+    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('./assets/images/Agence-Voyage/Voyage_accueil.jpg');">
         <div class="container">
             <!-- Titre principal de la bannière -->
             <h1 class="display-4 fw-bold text-dark">Explorez le Monde avec Nous</h1>
@@ -75,7 +79,7 @@
                 <!-- Carte de Paris -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
-                        <img src="image/Paris.png" class="card-img-top" alt="Destination Paris">
+                        <img src="./assets/images/Agence-Voyage/Paris.png" class="card-img-top" alt="Destination Paris">
                         <div class="card-body">
                             <h5 class="card-title">Paris</h5>
                             <p class="card-text">Paris, que l’on aime pour la douceur de son climat, la richesse de son histoire,
@@ -88,7 +92,7 @@
                 <!-- Carte de Tahiti -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
-                        <img src="image/Tahiti.png" class="card-img-top" alt="Destination Polynesie">
+                        <img src="./assets/images/Agence-Voyage/Tahiti.png" class="card-img-top" alt="Destination Polynesie">
                         <div class="card-body">
                             <h5 class="card-title">Polynésie</h5>
                             <p class="card-text">Tahiti, Bora Bora, les Marquises... On rêve de partir à la découverte de ces 118 îles du bout du monde.
@@ -102,7 +106,7 @@
                 <!-- Carte de Venise -->
                 <div class="col-md-4">
                     <div class="card zoom-effect">
-                        <img src="image/Venise.png" class="card-img-top" alt="Destination Venise">
+                        <img src="./assets/images/Agence-Voyage/Venise.png" class="card-img-top" alt="Destination Venise">
                         <div class="card-body">
                             <h5 class="card-title">Vénise</h5>
                             <p class="card-text">Bâtie sur l’eau, cette ville aux 400 ponts, 200 canaux et quelque 3000 ruelles fait rêver les
@@ -183,14 +187,14 @@
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn btn-primary fw-bold">Envoyer</button>
             </form>
         </div>
     </section>
 
     <!-- Pied de page -->
     <footer class="container bg-dark text-white text-center py-1">
-        <p>&copy; 2024 Traveling Agence ADA. Tous droits réservés.</p>
+        <p>&copy; 2024 Traveling Agence ADA | Tous droits réservés.</p>
         <div>
             <!-- Liens vers le profil GitHub -->
             <a href="https://github.com/AbegaTheo" target="_blank" class="mx-2 text-decoration-none">Github</a>

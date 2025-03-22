@@ -4,9 +4,23 @@ body {
   font-family: 'Open Sans', sans-serif; /* Police principale utilisée */
 }
 
+/* Barre de navigation */
+.navbar ul li a {
+  font-weight: bold; /* Texte en gras */
+}
+
+.lien {
+  margin-left: 50px; /* Marge gauche */
+}
+
+.lien:hover {
+  background-color: #ff8c29; /* Couleur de fond orange */
+  color: #fff; /* Couleur du texte blanche */
+  border-radius: 5px; /* Bordures arrondies */
+}
+
 /* Section héroïque avec une image de fond */
 .hero {
-  background-image: url('image/Lasagnes-butternut-ricotta-et-epinards-un-regal-automnal-a-ne-pas-manquer--1200x686.png'); /* Image de fond */
   background-size: cover; /* L'image couvre toute la section */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Pas de répétition de l'image */
@@ -16,6 +30,69 @@ body {
   justify-content: center; /* Centrer horizontalement */
   color: #fff; /* Couleur du texte blanche */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour rendre le texte plus lisible */
+}
+
+/* Style pour la Section contact */
+#contact {
+  background-color: #f8f9fa; /* Couleur de fond claire */
+  padding: 50px; /* Marge autour du texte */
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  flex-direction: column; /* Aligner les enfants verticalement */
+}
+
+/* Style pour le titre de la Section contact */
+#contact h3 {
+  font-size: 36px; /* Taille de police plus grande */
+  margin-bottom: 20px; /* Marge en bas du titre */
+  color: #333; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+}
+
+/* Style pour le formulaire de contact */
+#contact form {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centrer le formulaire */
+  background-color: #fff; /* Couleur de fond blanche */
+  padding: 20px; /* Marge autour du formulaire */
+  border-radius: 5px; /* Bordures arrondies */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour rendre le formulaire plus lisible */
+}
+
+/* Style des labels des champs du formulaire */
+#contact label {
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 5px; /* Marge en bas des labels */
+  display: block; /* Pour centrer les labels verticalement */
+}
+
+/* Style des champs du formulaire */
+#contact input,
+#contact textarea {
+  width: 100%; /* Largeur des champs */
+  padding: 10px; /* Marge autour des champs */
+  margin-bottom: 15px; /* Marge en bas des champs */
+  border: 1px solid #ccc; /* Bordure autour des champs */
+  border-radius: 3px; /* Bordures arrondies */
+  font-size: 16px; /* Taille de police plus grande */
+  color: #333; /* Couleur du texte */
+}
+
+/* Style des boutons du formulaire */
+#contact button {
+  background-color: #007bff; /* Couleur de fond bleu */
+  color: #fff; /* Couleur du texte blanche */
+  padding: 10px 20px; /* Marge autour des boutons */
+  border: none; /* Pas de bordure */
+  border-radius: 3px; /* Bordures arrondies */
+  font-size: 16px; /* Taille de police plus grande */
+  cursor: pointer; /* Curseur de souris en forme de main */
+}
+
+/* Style des erreurs dans le formulaire */
+#contact .error {
+  color: red; /* Couleur rouge pour les erreurs */
 }
 
 /* Style des cartes */
